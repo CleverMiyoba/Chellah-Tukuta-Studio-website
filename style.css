@@ -29,7 +29,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    background-color: #f3880e;
+    background-color: #f3620e;
     color: #fff;
 }
 
@@ -51,10 +51,12 @@ body {
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
+    font-size: larger;
+    font-weight: bold;
 }
 
 .navbar .menu a:hover {
-    background-color: hsl(0, 34%, 46%);
+    background-color: hsl(0, 43%, 39%);
 }
 
 /* Content styles */
@@ -67,16 +69,17 @@ body {
     font-size: 2em;
     margin-bottom: 20px;
     color: #f88705;
+    padding: 1%;
 }
 
 .content span {
-    color: #007bff;
+    color: whitesmoke;
 }
 
 .content .par {
     font-size: 1.1em;
     margin-bottom: 20px;
-    color: #007bff;
+    color: whitesmoke;
 }
 
 .content button {
