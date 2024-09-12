@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom ,rgba(255, 115, 1, 0.932),rgba(143, 83, 64, 0.651),rgb(231, 144, 144),rgba(43, 5, 5, 0.068));
+    background-position: 10px;
+   
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 50%;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.welcome-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 5s ease-out;
+    text-wrap: wrap;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    display: inline-block;
+    animation: typing 6s steps(30, end), blink-caret .75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #333;
+    font-size: 2rem;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 10em } /* Adjust width as needed */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #333 }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-bottom: 40%;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+#span{
+    color: orange;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+   
+   
+    color: #000000;
+    border: #333;
+    border-radius: 8px;
+}
+footer p{
+    color: rgb(0, 0, 0);
+    font-size: x-small;
+}
