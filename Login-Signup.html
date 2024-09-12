@@ -1,28 +1,20 @@
 <!DOCTYPE html>
-<!-- saved from url=(0058)file:///C:/Users/CLEVER%20MIYOBA/Desktop/Chella/index.html -->
+
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login / Sign up</title>
   <style>
    
-    body {
-      box-sizing: border-box;
-      margin:auto;
-      background-size: auto;      
-      offset-position: auto;
-    }
 
-   
     body {
+      margin:70px 70px;
       font-family: Arial;
-      background-color: rgba(0, 139, 199, 0.774);
+      background-color: rgba(37, 27, 16, 0.774);
+    
+      
 
-      width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(background.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+    
 }
     
 
@@ -39,18 +31,11 @@
       text-align: center;
     }
 
-    /* Main content styles */
-    main {
-      max-width: fit-content;
-      margin:auto auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 30px;
-    }
+    
 
     /* Image card styles */
     .image-card  {
-      background-color: #f7f5f5;
+      background-color: #811b1b;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       overflow: hidden;
@@ -65,43 +50,38 @@
     font-family: Arial;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    font-size: x-small;
 }
     
-         /*log in card*/
-      .container {
-        width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(background.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    }
-
+         
     .form-group {
-        padding: 10px;
+        padding: 100px;
       margin-bottom: 2px;
     }
-
+ /*log bars*/
     label {
     display: block;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     color: #e05e08;
     font-family: Arial;
     font-size: smaller;
-    padding: 4px;
+    padding: 0px;
 }
 
 /*login butns*/
     input[type="text"], input[type="password"] {
       width: 100%;
     padding: 8px;
-    border: 3px solid #e05e08;
+    border: 2px solid #e05e08;
     border-radius: 24px;
     box-sizing: border-box;
+    
   
 }
 /*Logn bar*/
 button  {
+  
       width: 100%;
   padding: 10px;
   background-color: #ee6408;
@@ -129,6 +109,11 @@ button  {
 
     
   }
+  h1{
+    text-align: center;
+    color: #171414;
+    
+  }
 </style>
 
 
@@ -145,30 +130,26 @@ button  {
     
 
 
-  <div class="container">
-    <div class="form-group">
-      <label for="username">Username</label>
-      <input type="text" id="username:" placeholder="Enter your number or username">
-    </div>
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" id="password" placeholder="Enter your password">
-    </div>
-    <button>Login</button>
+<div class="login-container">
+  <h1>Login</h1>
+  <form action="/login" method="post">
+      <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+  </form>
+</div>
     
     <div class="switch-container">
-      <p>Forgotten password? <a href="file:///C:/Users/CLEVER%20MIYOBA/Desktop/Chella/index.html#">Reset</a></p>
-      <p>Don't have an account? Click here to <a href="file:///C:/Users/CLEVER%20MIYOBA/Desktop/Chella/index.html#">Sign up</a>
+      <p>Forgotten password? <a href="welcome.html">Reset</a></p>
+      <p>Don't have an account? Click here to <a href="welcome.html">Sign up</a>
         
-        <div class="icons">
-
-            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-             
-        a></p>
+        
 
      
         

@@ -7,7 +7,7 @@ body, h1, p, ul, li, a {
 
 /* General body styles */
 body {
-    font-family: Arial, sans-serif;
+   font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
@@ -20,7 +20,9 @@ body {
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(background.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    background-repeat: no-repeat;
+    
+    
 }
 
 /* Navbar styles */
@@ -28,22 +30,35 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    background-color: #f3620e;
+   width: 100%;
+    background-color: orange;
     color: #fff;
+    margin-right: 100px;
+    border-radius: 10px;
+    padding-bottom: 10%;
 }
 
 .navbar .logo {
-    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+font-size: x-small;
+font-weight: bolder;
+padding-left: 1px;
+border: #000000;
+border-style: outset;
+border-radius: 8px;
 }
+
+
 
 .navbar .menu ul {
     display: flex;
     list-style: none;
+    margin-top:15%;
+    
 }
 
 .navbar .menu li {
-    margin-left: 20px;
+    margin-right: 10px;
 }
 
 .navbar .menu a {
@@ -51,12 +66,14 @@ body {
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: larger;
+    font-size: large;
     font-weight: bold;
+    
 }
 
 .navbar .menu a:hover {
-    background-color: hsl(0, 43%, 39%);
+    background-color: hsl(0, 16%, 47%);
+    transition: 1.5s;
 }
 
 /* Content styles */
@@ -73,7 +90,7 @@ body {
 }
 
 .content span {
-    color: whitesmoke;
+    color: rgb(224, 223, 219);
 }
 
 .content .par {
@@ -81,6 +98,8 @@ body {
     margin-bottom: 20px;
     color: whitesmoke;
 }
+
+ 
 
 .content button {
     background-color: orange;
@@ -116,33 +135,9 @@ footer {
     padding: 10px;
     background-color:orange;
     color: #000000;
+    font-size: x-small
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .navbar .menu {
-        margin-top: 10px;
-    }
 
-    .navbar .menu ul {
-        flex-direction: column;
-    }
 
-    .navbar .menu li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .content h1 {
-        font-size: 1.5em;
-    }
-
-    .content .par {
-        font-size: 1em;
-    }
-}
