@@ -19,12 +19,7 @@ body {
     max-width: auto;
     margin: 0 auto;
     padding: 0px;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(FB_IMG_17236291897492266.jpg);
-    background-position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    
+    background-color:  #25231d;
 }
 
 /* Navbar styles */
