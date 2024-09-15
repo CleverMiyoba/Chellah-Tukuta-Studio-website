@@ -11,9 +11,10 @@ body {
 }
 
 .container {
-    padding: 50%;
+    
     text-align: center;
     padding-bottom: 2px;
+    margin-top: 11%;
 }
 
 .welcome-text {
@@ -23,8 +24,10 @@ body {
     margin-bottom: 20px;
     animation: fadeIn 5s ease-out;
     text-wrap: wrap;
+    
 
 }
+
 
 @keyframes fadeIn {
     from {
@@ -90,4 +93,5 @@ footer {
 footer p{
     color: rgb(0, 0, 0);
     font-size: x-small;
+    margin-bottom: 5%;
 }
